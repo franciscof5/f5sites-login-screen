@@ -1,7 +1,7 @@
 {
 	"name": "f5sites/wp-login-simplest-logo-replacer",
 	"description": "Simplest plugin for quickly wp-login repagination, just put it on your wp-content/mu-plugins folders. WordPress F5 Sites DEV projects",
-	"type": "wordpress-mu-plugins",
+	"type": "wordpress-muplugin",
 	"authors": [
 		{
 			"name": "Francisco Matelli Matulovic",
