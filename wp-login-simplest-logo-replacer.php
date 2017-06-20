@@ -21,12 +21,14 @@ function my_login_logo() {
 			height:inherit !important;
 			background-image: url('.site_url().'/wp-content/mu-plugins/wp-login-logo.png);
 			padding-bottom: 30px;
+			min-width:200px;
+			min-height:50px;
 		}
 		body, html, .wp-core-ui .button-primary {
 			background: #006599 !important;
 		}
 		a {
-			color:#FFF !important;
+			color:#999 !important;
 		}
 		.login form {
 			border-radius: 15px;
