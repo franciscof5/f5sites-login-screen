@@ -1,12 +1,13 @@
 <?php
 /*
-Plugin Name: Wp-Login Simplest Logo Replacer
-Plugin URI: www.f5sites.com/wp-login-simplest-logo-replacer
-Description: Simple and elegant update your logo on wp-admin just put it on /mu-plugins folder and change it's folder content
+Plugin Name: F5 Sites | Login Screen
+Plugin URI: https://www.f5sites.com/software/wordpress/f5sites-login-screen/
+Description: Simple update your logo /mu-plugins folder and change file f5sites-login-screen.php for customize css.
 Author: Francisco Matelli Matulovic
 Author URI: www.franciscomat.com
-Version: 2016.11
-Tags: logo, wp-login, customization, quickly
+Version: 1.0
+License: GPLv3
+Tags: logo, wp-login, wpmu
 */
 
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
@@ -19,7 +20,7 @@ function my_login_logo() {
 	echo '<style type="text/css">
 		#login h1 a, .login h1 a {
 			height:inherit !important;
-			background-image: url('.site_url().'/wp-content/mu-plugins/wp-login-logo.png);
+			background-image: url('.site_url().'/wp-content/plugins/f5sites-login-screen/wp-login-logo.png);
 			padding-bottom: 30px;
 			min-width:200px;
 			min-height:50px;
