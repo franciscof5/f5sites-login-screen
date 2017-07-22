@@ -1,5 +1,5 @@
 === F5 Sites | Login Screen ===
-Plugin URI: https://www.f5sites.com/software/wordpress/
+Plugin URI: https://www.f5sites.com/software/wordpress/f5sites-footer-bar/
 Contributors: f5sites, franciscof5
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: customize, logo, wp-admin
