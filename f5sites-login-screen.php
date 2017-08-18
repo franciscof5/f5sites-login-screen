@@ -19,11 +19,20 @@ function my_login_logo() {
 	#wp_enqueue_script("jquery");
 	echo '<style type="text/css">
 		#login h1 a, .login h1 a {
-			height:inherit !important;
-			background-image: url('.site_url().'/wp-content/plugins/f5sites-login-screen/wp-login-logo.png);
+			/*height:inherit !important;*/
+			background: url('.site_url().'/wp-content/plugins/f5sites-login-screen/wp-login-logo.png) no-repeat center center ;
+			-webkit-background-size: cover;
+	        -moz-background-size: cover;
+	        -o-background-size: cover;
+	        background-size: cover;
+			margin-top:-25px !important;
+			width:300px;
+			height:100px;
+			/*
+			margin-top:25px !important;
 			padding-bottom: 30px;
-			min-width:200px;
-			min-height:50px;
+			position: relative;
+			display:block;*/
 		}
 		body, html, .wp-core-ui .button-primary {
 			background: #006599 !important;
