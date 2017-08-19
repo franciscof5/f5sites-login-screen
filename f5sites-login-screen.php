@@ -10,11 +10,11 @@ License: GPLv3
 Tags: logo, wp-login, wpmu
 */
 
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
-add_filter( 'login_headerurl', 'my_login_logo_url' );
-add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+add_action( 'login_enqueue_scripts', 'f5_login_logo' );
+add_filter( 'login_headerurl', 'f5_login_logo_url' );
+add_filter( 'login_headertitle', 'f5_login_logo_url_title' );
 
-function my_login_logo() {
+function f5_login_logo() {
 	#wp_dequeue_script("jquery");
 	#wp_enqueue_script("jquery");
 	echo '<style type="text/css">
@@ -82,11 +82,11 @@ function my_login_logo() {
 	</script>';
 }
 
-function my_login_logo_url() {
+function f5_login_logo_url() {
     return home_url();
 }
 
-function my_login_logo_url_title() {
+function f5_login_logo_url_title() {
     #get_bloginfo("description")
     return get_bloginfo("name").get_bloginfo("description");
 }
