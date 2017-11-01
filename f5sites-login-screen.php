@@ -98,6 +98,3 @@ function f5_login_logo_url_title() {
     #get_bloginfo("description")
     return get_bloginfo("name").get_bloginfo("description");
 }
-
-?>
-
