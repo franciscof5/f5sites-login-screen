@@ -35,13 +35,19 @@ function f5_login_logo() {
 			display:block;*/
 		}
 		body, html, .wp-core-ui .button-primary {
-			background: #006599 !important;
+			/*background: #006599 !important;*/
+			background: #323232 !important;
 		}
 		a {
 			color:#999 !important;
 		}
+		#login {
+			background:#222;
+			min-height:90%;
+		}
 		.login form {
-			border-radius: 15px;
+			/*border-radius: 15px;*/
+			border-radius: 0px;
 		}
 		#f5alert {
 			text-align:center;color:#FFF;
@@ -49,6 +55,15 @@ function f5_login_logo() {
 		}
 		.message {
 			display: none !important;
+		}
+		#wp-submit {
+			color:#FFF;
+			text-shadow:none;
+			border:0;
+			text-transform:uppercase;
+		}
+		.login #backtoblog, .login #nav {
+			text-align:center;
 		}
 		</style>
 
