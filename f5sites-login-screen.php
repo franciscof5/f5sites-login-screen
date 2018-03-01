@@ -10,6 +10,10 @@ License: GPLv3
 Tags: logo, wp-login, wpmu
 */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 add_action( 'login_enqueue_scripts', 'f5_login_logo' );
 add_filter( 'login_headerurl', 'f5_login_logo_url' );
 add_filter( 'login_headertitle', 'f5_login_logo_url_title' );
