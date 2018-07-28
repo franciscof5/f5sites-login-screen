@@ -95,7 +95,7 @@ function f5_login_logo() {
 		// Use $ here...
 		//alert("foi jQuery");
 	    $("#login h1 a").prop(\'href\', \'https://www.f5sites.com/'.$_SERVER["HTTP_HOST"].'\');
-		$("<p id=f5alert>Você está acessando: <a href=https://www.f5sites.com/'.$_SERVER["HTTP_HOST"].' alt=F5 Sites | '.get_bloginfo("description").'\>'.get_bloginfo("name").'</strong></a></br>'.get_bloginfo("description").'</br>Use sua conta F5 Sites</p>").insertBefore("#loginform");
+		$("<p id=f5alert>Você está acessando: <a href=https://'.$_SERVER["HTTP_HOST"].' alt=F5 Sites | '.get_bloginfo("description").'\>'.get_bloginfo("name").'</strong></a></br>'.get_bloginfo("description").'</br>Use sua conta F5 Sites</p>").insertBefore("#loginform");
 	    });
 	    
 	})();
