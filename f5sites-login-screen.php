@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_action( 'login_enqueue_scripts', 'f5_login_logo' );
 add_filter( 'login_headerurl', 'f5_login_logo_url' );
-add_filter( 'login_headertitle', 'f5_login_logo_url_title' );
+add_filter( 'login_headertext', 'f5_login_logo_url_title' );
 
 function f5_login_logo() {
 	#wp_dequeue_script("jquery");
@@ -30,8 +30,8 @@ function f5_login_logo() {
 	        -o-background-size: cover;
 	        background-size: cover;
 			margin-top:-25px !important;
-			width:300px;
-			height:100px;
+			width:320px;
+			height:160px;
 			/*
 			margin-top:25px !important;
 			padding-bottom: 30px;
@@ -40,7 +40,7 @@ function f5_login_logo() {
 		}
 		body, html, .wp-core-ui .button-primary {
 			/*background: #006599 !important;*/
-			background: #323232 !important;
+			background: #222 !important;
 		}
 		a {
 			color:#999 !important;
@@ -48,10 +48,12 @@ function f5_login_logo() {
 		#login {
 			background:#222;
 			min-height:90%;
+			padding-top: 4% !important;
 		}
 		.login form {
 			/*border-radius: 15px;*/
 			border-radius: 0px;
+			background: #E6E6E6;
 		}
 		#f5alert {
 			text-align:center;color:#FFF;
@@ -68,6 +70,10 @@ function f5_login_logo() {
 		}
 		.login #backtoblog, .login #nav {
 			text-align:center;
+		}
+		.login label {
+			color: #222;
+			font-weight: bold;
 		}
 		</style>
 
