@@ -40,29 +40,34 @@ function f5_login_logo() {
 		}
 		body, html, .wp-core-ui .button-primary {
 			/*background: #006599 !important;*/
-			background: #222 !important;
+			background: #E6E6E6 !important; /*#222*/
 		}
 		a {
-			color:#999 !important;
+			color:#666 !important;
 		}
 		#login {
-			background:#222;
+			background: #E6E6E6; /*#222;*/
 			min-height:90%;
 			padding-top: 4% !important;
 		}
 		.login form {
 			/*border-radius: 15px;*/
 			border-radius: 0px;
-			background: #E6E6E6;
+			border: 0 !important;
+			background: #E6E6E6 !important;
 		}
 		#f5alert {
 			text-align:center;color:#FFF;
 			font-weight:600;
+			color: #666666;
 		}
 		.message {
 			display: none !important;
 		}
+		.login .admin-email__actions .button-primary,
 		#wp-submit {
+			background: #03659C !important;
+			border-radius: 0;
 			color:#FFF;
 			text-shadow:none;
 			border:0;
